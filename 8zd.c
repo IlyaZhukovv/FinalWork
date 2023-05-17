@@ -10,7 +10,7 @@
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	int i, ans = 1;
+	int i, anss = 1;
 	int a[SIZE];
 	srand(time(NULL));
 	for (int i = 0; i < SIZE; i++)
@@ -20,15 +20,15 @@ int main()
 	}
 	for (int i = 0; i < SIZE; i++)
 		if (!(a[i] % 2)) {
-			ans = a[i];
+			anss = a[i];
 			break;
 		}
 	for (int i = 0; i < SIZE; i++)
 		if (!(a[i] % 2))
-			if (ans > a[i])
-				ans = a[i];
-	if (!(ans % 2))
-		printf("Answer: %d", ans);
+			if (anss > a[i])
+				anss = a[i];
+	if (!(anss % 2))
+		printf("Answer: %d", anss);
 	else
 		printf("There is no even elements\n");
 	printf("%s", "\n");

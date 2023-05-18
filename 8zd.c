@@ -10,7 +10,11 @@
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	int i, anss = 1;
+	//Переменная i используется в циклах для итерации по массиву a
+	int i;
+	//Переменная anss используется для хранения значения найденного четного элемента массива. 
+	//Изначально она установлена в 1 для случая, когда в массиве отсутствуют четные элементы.
+	int anss = 1;
 	int a[SIZE];
 	srand(time(NULL));
 	for (int i = 0; i < SIZE; i++)
@@ -32,7 +36,10 @@ int main()
 	else
 		printf("There is no even elements\n");
 	printf("%s", "\n");
-	int n, m, aa, bb;
+	int n;
+	int m;
+	int aa;
+	int bb;
 	int mas[10][10];
 	int c = 0;
 	for (n = 0; n < 10; n++) {

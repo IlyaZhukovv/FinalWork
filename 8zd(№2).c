@@ -17,7 +17,7 @@ int main()
 	int anss = 1; // присовил ноой переменной занечние один
 	int a[SIZE];
 	srand(time(NULL)); // время сделал так
-	for (int i = 0; i < SIZE; i++)
+	for (int i = 0; i < SIZE; i++) // цикл ываолаывола
 	{
 		a[i] = rand() % 61 + (-20);
 		printf("%d ", a[i]);
